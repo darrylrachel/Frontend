@@ -1,0 +1,101 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --green: hsl(159, 69%, 38%);
+  --red: hsl(14, 86%, 42%);
+
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+/* DELETE */
+.border {
+  border: 1px solid aqua;
+}
+/* DELETE */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.preset-1 {
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-weight: var(--fw-700);
+}
+
+.preset-2 {
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0px;
+  font-weight: var(--fw-700);
+}
+
+.preset-3 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: var(--fw-400);
+}
+
+.preset-4 {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: var(--fw-700);
+}
+
+.preset-4-bold {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: var(--fw-600);
+}
+
+/* Main Container */
+.wrapper {
+  padding: 60px 100px;
+}
+
+.header h1 {
+  color: var(--rose-900);
+  margin-bottom: 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.product-wrapper {
+  width: 100%;
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  margin-right: 24px;
+}
