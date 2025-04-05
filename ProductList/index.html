@@ -6,11 +6,23 @@
     <!-- displays site properly based on user's device -->
 
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
 
     <title>Frontend Mentor | Product list with cart</title>
 
@@ -43,7 +55,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container-fluid">
+      <div class="container header-container">
         <div class="row">
           <div class="header">
             <h1 class="preset-1">Desserts</h1>
@@ -51,7 +63,7 @@
         </div>
       </div>
 
-      <section class="main container-fluid">
+      <section class="main container">
         <row>
           <div class="product-wrapper">
             <!-- START CARDS ROW -->
@@ -69,7 +81,10 @@
                   <p class="card-text price preset-3">$6.50</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -95,7 +110,10 @@
                   <p class="card-text price preset-3">$7.00</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -119,7 +137,10 @@
                   <p class="card-text price preset-3">$8.00</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -147,7 +168,10 @@
                   <p class="card-text price preset-3">$5.50</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -171,7 +195,10 @@
                   <p class="card-text price preset-3">$4.00</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -195,7 +222,10 @@
                   <p class="card-text price preset-3">$8.00</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -223,7 +253,10 @@
                   <p class="card-text price preset-3">$4.50</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -247,7 +280,10 @@
                   <p class="card-text price preset-3">$5.50</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -271,7 +307,10 @@
                   <p class="card-text price preset-3">$6.50</p>
                 </div>
                 <div class="cta-button">
-                  <a href="#" class="btn btn-primary" id="addToCartBtn"
+                  <a
+                    href="#"
+                    class="btn btn-primary preset-4-bold"
+                    id="addToCartBtn"
                     ><img
                       src="./assets/images/icon-add-to-cart.svg"
                       alt="Add to cart icon"
@@ -285,16 +324,19 @@
             <!-- START CARDS ROW -->
           </div>
         </row>
-        <row>
-          <div class="jumbotron">
-            <h1 class="cart-title preset-2">Your Cart (0)</h1>
-            <img src="./assets/images/illustration-empty-cart.svg" alt="" />
-            <p>Your added items will appear here</p>
-            <p class="lead">
-              <!-- Add cart checkout button -->
-            </p>
-          </div>
-        </row>
+        <!-- cartContainer -->
+        <div class="cartContainer">
+          <row class="cartRow">
+            <div class="jumbotron">
+              <h1 class="cart-title preset-2">Your Cart (0)</h1>
+              <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+              <p>Your added items will appear here</p>
+              <p class="lead">
+                <!-- Add cart checkout button -->
+              </p>
+            </div>
+          </row>
+        </div>
       </section>
     </div>
 
